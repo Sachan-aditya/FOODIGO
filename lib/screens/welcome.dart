@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
 class Welcome extends StatefulWidget {
@@ -16,7 +17,7 @@ class _WelcomeState extends State<Welcome> {
         children: [
           LottieBuilder.asset('assets/animation_lndhvqe8.json'),
       
-         Text("FOODIGO"
+         Text("FOODIGO",style:GoogleFonts.lato()
 
          )
         ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/screens/welcome.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,8 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Welcome(),
-      ),
+        body:
+         Container(
+          child: Welcome(),
+         )
+         )
+     
+      
     );
   }
 }
