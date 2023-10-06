@@ -45,7 +45,7 @@ class _LoginscreenState extends State<Loginscreen> {
             width: 360, 
             child: Container( 
                 child: Padding( 
-                  padding: const EdgeInsets.all(10), 
+                  padding: const EdgeInsets.all(20.0), 
                   child: ElevatedButton( 
                     child: Text( 'Log in ', style: TextStyle(color: Colors.white, fontSize: 20), 
                     ), 
@@ -69,7 +69,7 @@ class _LoginscreenState extends State<Loginscreen> {
   
                       Padding( 
                         padding: const EdgeInsets.only(left: 62), 
-                        child: Text('Dont have an Account?'), 
+                        child: Text('NEW USER?'), 
                       ), 
   
                       Padding( 
@@ -78,7 +78,7 @@ class _LoginscreenState extends State<Loginscreen> {
                           onTap: (){ 
                             
                           }, 
-                            child: Text('Sign up.', style: TextStyle(fontSize: 14, color: Colors.blue),)), 
+                            child: Text('REGISTER HERE', style: TextStyle(fontSize: 14, color: Colors.blue),)), 
                       ) 
                     ], 
                   ), 
