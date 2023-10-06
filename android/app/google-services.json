@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "591603607687",
+    "project_id": "geowell",
+    "storage_bucket": "geowell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591603607687:android:22b5f667af75150ecf3022",
+        "android_client_info": {
+          "package_name": "com.example.grocery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591603607687-el34knq3q4io4rtrntdk8nd6u0s8p6u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUN03u2kt_W3mdVsRTjdGLBcm2XFpkCiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591603607687-el34knq3q4io4rtrntdk8nd6u0s8p6u3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "591603607687-0cfupfrtqri33prifph4jpm253c29fe7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.geowell"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591603607687:android:7beff181028ba104cf3022",
+        "android_client_info": {
+          "package_name": "com.example.widgets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591603607687-lfrgdtmpj86f62henrfb23q2cqjrtsvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.widgets",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "591603607687-el34knq3q4io4rtrntdk8nd6u0s8p6u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUN03u2kt_W3mdVsRTjdGLBcm2XFpkCiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591603607687-el34knq3q4io4rtrntdk8nd6u0s8p6u3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "591603607687-0cfupfrtqri33prifph4jpm253c29fe7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.geowell"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grocery/screens/home.dart';
-import 'package:grocery/screens/signp.dart';
 import 'package:lottie/lottie.dart';
 
 class Loginscreen extends StatefulWidget {
@@ -12,6 +11,7 @@ class Loginscreen extends StatefulWidget {
 }
 
 class _LoginscreenState extends State<Loginscreen> {
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class _LoginscreenState extends State<Loginscreen> {
             'assets/pam.json',
             height: 150,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.all(30),
             child: TextField(
               decoration: InputDecoration(
@@ -31,8 +31,8 @@ class _LoginscreenState extends State<Loginscreen> {
                   hintText: 'Enter valid email id'),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(30),
+          const Padding(
+            padding: EdgeInsets.all(30),
             child: TextField(
               obscureText: true,
               decoration: InputDecoration(
@@ -44,56 +44,57 @@ class _LoginscreenState extends State<Loginscreen> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                child: ElevatedButton(
-                  child: Text(
-                    'Log in ',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orangeAccent,
-                      shadowColor: Colors.black,
-                      shape: StadiumBorder()),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orangeAccent,
+                    shadowColor: Colors.black,
+                    shape: const StadiumBorder()),
+                child: Text(
+                  'Log in ',
+                  style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
                 child: Text("OR "),
               ),
               ElevatedButton.icon(
+                
                 onPressed: () {},
-                icon: FaIcon(FontAwesomeIcons.google),
-                label: Text(
+                icon: const FaIcon(FontAwesomeIcons.google),
+                label: const Text(
                   "Google",
                   style: TextStyle(fontSize: 20),
                 ),
-                style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+                style: ElevatedButton.styleFrom(shape: const StadiumBorder()),
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Container(
             alignment: Alignment.center,
             child: Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 62),
+                const Padding(
+                  padding: EdgeInsets.only(left: 62),
                   child: Text('NEW USER?'),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 1.0),
                   child: InkWell(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (_) => const Homepage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => const Homepage()));
                       },
-                      child: Text(
+                      child: const Text(
                         'REGISTER HERE',
                         style: TextStyle(fontSize: 14, color: Colors.blue),
                       )),
