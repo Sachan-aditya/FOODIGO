@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 
 class Loginscreen extends StatefulWidget {
@@ -23,7 +24,7 @@ class _LoginscreenState extends State<Loginscreen> {
                 decoration: InputDecoration( 
                     border: OutlineInputBorder(), 
                     labelText: 'Login', 
-                    hintText: 'Enter valid email id as abc@gmail.com'), 
+                    hintText: 'Enter valid email id'), 
               ), 
             ), 
             Padding( 
@@ -36,27 +37,36 @@ class _LoginscreenState extends State<Loginscreen> {
                 decoration: InputDecoration( 
                     border: OutlineInputBorder(), 
                     labelText: 'Password', 
-                    hintText: 'Enter secure password'), 
+                    hintText: 'min 6 digit password'), 
               ), 
             ), 
   
-          SizedBox( 
-            height: 65, 
-            width: 360, 
-            child: Container( 
-                child: Padding( 
-                  padding: const EdgeInsets.all(20.0), 
-                  child: ElevatedButton( 
-                    child: Text( 'Log in ', style: TextStyle(color: Colors.white, fontSize: 20), 
-                    ), 
-                    onPressed: (){ 
-                      
-                    }, 
-  
-                  ), 
-                ), 
-              ), 
-          ), 
+          
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container( 
+          
+                      child: ElevatedButton( 
+                        child: Text( 'Log in ', style: TextStyle(color: Colors.white, fontSize: 20), 
+                        ), 
+                        onPressed: (){ 
+                          
+                        }, 
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.orangeAccent,
+                shadowColor: Colors.black,shape: StadiumBorder()),
+                      ), 
+                    ),
+                    SizedBox(height: 10,),
+                    SizedBox(height:  20,child: Text("OR "),
+                    ),
+                      ElevatedButton.icon(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.google)
+             , label: Text("Google",style: TextStyle(fontSize: 20),),
+             style: ElevatedButton.styleFrom(shape: StadiumBorder()),)
+              ],
+            ), 
+              
+          
   
             SizedBox( 
               height: 50, 
@@ -82,8 +92,8 @@ class _LoginscreenState extends State<Loginscreen> {
                       ) 
                     ], 
                   ), 
-                ) 
-             
+            )
+           
         ],
       ),
     );
