@@ -11,7 +11,6 @@ class Loginscreen extends StatefulWidget {
 }
 
 class _LoginscreenState extends State<Loginscreen> {
- 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +27,7 @@ class _LoginscreenState extends State<Loginscreen> {
               decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Login',
-                  hintText: 'Enter valid email id'),
+                  hintText: 'Enter email id'),
             ),
           ),
           const Padding(
@@ -50,7 +49,7 @@ class _LoginscreenState extends State<Loginscreen> {
                     backgroundColor: Colors.orangeAccent,
                     shadowColor: Colors.black,
                     shape: const StadiumBorder()),
-                child: Text(
+                child: const  Text(
                   'Log in ',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
@@ -63,8 +62,9 @@ class _LoginscreenState extends State<Loginscreen> {
                 child: Text("OR "),
               ),
               ElevatedButton.icon(
+                onPressed: () {
                 
-                onPressed: () {},
+                },
                 icon: const FaIcon(FontAwesomeIcons.google),
                 label: const Text(
                   "Google",
