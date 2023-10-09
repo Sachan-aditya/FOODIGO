@@ -1,12 +1,9 @@
 import 'dart:developer';
-
-import 'package:battery_service_app/Auth/Admin_auth/admin_signup.dart';
-import 'package:battery_service_app/Auth/employee_auth/employee_login.dart';
-import 'package:battery_service_app/admin_homescreen/admin_homescreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:grocery/screens/admin/adminsign.dart';
+import 'package:grocery/screens/adminhomescreen.dart';
 
 class AdminLogin extends StatefulWidget {
   const AdminLogin({super.key});

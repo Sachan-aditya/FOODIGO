@@ -2,6 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery/screens/admin/login.dart';
 
 class AdminHomeScreen extends StatefulWidget {
   const AdminHomeScreen({super.key});
@@ -30,7 +31,7 @@ class _AdminHomeScreenState extends State<AdminHomeScreen> {
               onPressed: () async {
                 Navigator.of(context).pop(); // Close the dialog
                 await FirebaseAuth.instance.signOut();
-                Navigator.popUntil(context, (route) => route.isFirst);
+               Navigator.popUntil(context, (route) => route.isFirst);
                 Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(builder: (context) => const AdminLogin()),
